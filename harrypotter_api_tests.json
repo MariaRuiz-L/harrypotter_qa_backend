@@ -1,0 +1,48 @@
+{
+  "info": {
+    "_postman_id": "9D74BA4cDc861AC425315cD1",
+    "name": "HarryPotter",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "harryPotter",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Test 1: Verificar que el servidor responde con status 200 OK",
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "// Test 2: Verificar que la respuesta es un JSON con datos",
+              "pm.test(\"La respuesta contiene un array de personajes\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.data).to.be.an('array');",
+              "});",
+              "",
+              "// Test 3: Verificar que el tiempo de respuesta es rápido (buen rendimiento)",
+              "pm.test(\"Tiempo de respuesta inferior a 3000ms\", function () {",
+              "    pm.expect(pm.response.responseTime).to.be.below(3000);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.potterdb.com/v1/characters",
+          "protocol": "https",
+          "host": ["api", "potterdb", "com"],
+          "path": ["v1", "characters"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
