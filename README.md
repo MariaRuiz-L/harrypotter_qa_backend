@@ -1,8 +1,8 @@
-# **Harry Potter - Backend & QA Demo Kit
+# Harry Potter - Backend & QA Demo Kit
 
 Este respositorio funciona como un Backend & QA Testing Demo Kit desarrollado como un portfolio técnico complementario para la aplicación web de Harry Potter. Incluye prueba de API en Postman, diseño de base datos relacional SQL y batería de pruebas unitarias en Java con JUnit 5.
 
-## **Resumen Arquitectónico y Pilares
+## Resumen Arquitectónico y Pilares
 
 El proyecto está estructurado en tres pilares fundamentales:
 
@@ -12,7 +12,7 @@ El proyecto está estructurado en tres pilares fundamentales:
 
 3. Pruebas de API (Postman): Validación automatizada de contratos HTTP, verificación de esquemas JSON y control de umbrales de rendimiento.
 
-## **Estructura del Repositorio
+## Estructura del Repositorio
 
 harrypotter_qa_backend/
 ├── src/
