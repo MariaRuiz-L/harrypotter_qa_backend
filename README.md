@@ -12,15 +12,3 @@ El proyecto está estructurado en tres pilares fundamentales:
 
 3. Pruebas de API (Postman): Validación automatizada de contratos HTTP, verificación de esquemas JSON y control de umbrales de rendimiento.
 
-## Estructura del Repositorio
-
-harrypotter_qa_backend/
-├── src/
-│   ├── harryPotter/
-│   │   └── Character.java          # Clase de dominio Java
-│   └── test/
-│       └── CharacterTest.java      # Casos de prueba JUnit 5
-├── .gitignore                      # Archivo de exclusión de Git
-├── harrypotter_db.sql              # Esquema relacional y datos SQL
-├── harrypotter_api_tests.json      # Colección de Postman con scripts automatizados
-└── README.md                       # Documentación del proyecto
